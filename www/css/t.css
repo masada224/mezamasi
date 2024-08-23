@@ -1,0 +1,203 @@
+/* This is a CSS file */
+
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: dimgray;
+}
+
+.calendar-wrap {
+  margin: 20px;
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+@media (max-width: 767.98px) {
+  .calendar-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+.calendar th,
+.calendar td {
+  border: 1px solid #000;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.calendar th {
+  padding: 6px 10px;
+}
+.calendar td {}
+@media (max-width: 767.98px) {
+  .calendar th,
+  .calendar td {
+    padding: 6px;
+    font-size: 12px;
+  }
+  .calendar th {
+    padding: 3px 6px;
+  }
+}
+
+.calendar .sun {
+  color: #e17f7e;
+  background-color: #f8e4e2;
+}
+.calendar .sat {
+  color: #7ab6f3;
+  background-color: #e7f6fd;
+}
+.calendar .mute {
+  color: #aaa;
+}
+.calendar .today {
+  background-color: #7d7d7d;
+}
+.calendar .off {
+  background-color: #fadcdb;
+}
+.calendar .sat {
+  background-color: #e7f6fd;
+}
+a{
+    color: #00ff9d;
+    text-decoration: none
+}
+
+//メニューcss
+body{
+    margin: 0;
+  overflow-x: hidden;
+}
+.header-area{
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  padding: 0 10px;
+  align-items: center;
+}
+.hamburger{
+  width: 15%;
+  height: 50%;
+  position: relative;
+}
+.hamburger span{
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  transition: .5s;
+}
+.hamburger span:first-of-type{/* ハンバーガーメニューの1番目の線 */
+  top: 0;
+}
+.hamburger span:nth-of-type(2){/* ハンバーガーメニューの2番目の線 */
+  top: 50%;
+}
+.hamburger span:last-of-type{/* ハンバーガーメニューの3番目の線 */
+  top: 100%;
+}
+.slide-menu{
+  background-color: rgba(0, 0, 0, .8);
+  margin:0;padding:0;
+  position: fixed;
+  height: 100%;
+  width: 40%;
+  left: 0;
+  transform: translateX(-100%);
+  transition: .5s;
+  padding-left: 0px;
+}
+.slide-menu li{
+  color: #fff;
+  line-height: 300%;
+  list-style: none;
+  text-align: center;
+}
+.hamburger.active span:first-of-type{/* ハンバーガーメニューの1番目の線 */
+  top: 50%;
+  transform: rotate(45deg);
+}
+.hamburger.active span:nth-of-type(2){/* ハンバーガーメニューの2番目の線 */
+  opacity: 0;/* 透明にする */
+}
+.hamburger.active span:last-of-type{/* ハンバーガーメニューの3番目の線 */
+  top: 50%;
+  transform: rotate(-45deg);
+}
+.slide-menu.active{
+  transform: translateX(0);
+}
+/* This is a CSS file */
+
+
+body {
+            font-family: Arial, 'メイリオ', sans-serif;
+            text-align:  center;
+        }
+        #timerText {
+            color: #00c9c2;
+            font-size: 80px;
+            margin: 0px auto;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        select {
+            font-size: 18px;
+            padding: 0px;
+        }
+
+        .btn{
+            margin-left: 5px;
+            display: inline-block;
+            font-weight: bold;
+            width: 60px;
+            padding: 0.5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 0 #CDC9C9;
+            background: #EEE9E9;
+            cursor: pointer;
+        }
+
+        .delete_btn {
+            margin-left: 15px;
+            font-weight: bold;
+            width: 60px;
+            padding: 3px;
+            border-radius: 5px;
+            background: #FF4500;
+            box-shadow: 0 2px 0 red;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .container {
+            text-align: left;
+            padding: 15px;
+            margin: 0 auto;
+            background: #e0e0e0;
+            width: 90%;
+            height: 190px;
+        }
+        .container p {
+            font-size: 16px;
+            margin: 5px;
+
+        }
+
+        .container li{
+            margin-bottom: 7px; 
+        }
+
+        
